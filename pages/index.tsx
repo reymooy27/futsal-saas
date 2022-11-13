@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import SideBar from '../components/SideBar'
+import Navbar from '@/components/Navbar'
+import SideBar from '@/components/SideBar'
 
 export default function Home() {
   return (
@@ -10,9 +11,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='w-full h-full flex flex-column'>
+      <main className='w-full h-full flex'>
         <SideBar/>
-        <div className='w-full'>Home</div>
+        <div className='w-full'>
+          <Navbar/>
+        </div>
       </main>
     </div>
   )
